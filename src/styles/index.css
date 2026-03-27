@@ -1,0 +1,8 @@
+/**
+ * Design tokens — source of truth for CSS variables.
+ * Document semantic roles in /design.md at the repo root.
+ */
+
+:root {
+  /* Add tokens here; use var(--*) in components — no hardcoded hex/radius in JSX. */
+}
