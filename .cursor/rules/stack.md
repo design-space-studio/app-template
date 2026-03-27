@@ -31,6 +31,11 @@ Always use this stack unless explicitly told otherwise:
 ## Folder structure
 
 ```
+( repo root )
+PRD.md                    # What we're building and why — template + placeholders
+project_context.md        # Background, decisions, team — template + placeholders
+design.md                 # Visual tokens and brand guidelines
+CHANGELOG.md            # What changed when and why (see Changelog discipline)
 src/
   app/                    # Next.js app router — pages and layouts
     (routes)/             # Route groups
@@ -112,3 +117,22 @@ At the start of every session, read these files if present:
 3. `project_context.md` — background, decisions, team context
 
 These are your source of truth. If something in your training conflicts with these files, defer to the files.
+
+## Changelog discipline
+
+A `CHANGELOG.md` lives in the root of every project. Update it when:
+- A new package is added (note why)
+- A design token changes (note what and why)
+- A cursor rule or command is modified
+- A scope or architecture decision is made mid-project
+- Something was tried and abandoned (especially valuable)
+
+Format each entry as:
+`[YYYY-MM-DD] [type] description`
+
+Types: `added` / `changed` / `removed` / `decided`
+
+Example:
+`[2026-03-27] decided — cut transcription from week 1, focus on timestamp sync core loop first`
+
+Keep entries short. One line is enough. The goal is context for future sessions, not documentation for documentation's sake.

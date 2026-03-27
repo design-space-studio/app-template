@@ -6,10 +6,11 @@ Reusable scaffold for Next.js apps: conventions, Cursor rules, folder layout, an
 
 See `.cursor/rules/stack.md` (Next.js App Router, Tailwind, Shadcn/ui, Phosphor, Supabase, TypeScript).
 
-## Before you build UI
+## Before you build
 
-1. Read `design.md` and fill in tokens.
-2. Implement variables in `src/styles/index.css`.
+1. Copy and fill `PRD.md` (what to build) and `project_context.md` (how the team works and decides).
+2. Read `design.md` and fill in tokens.
+3. Implement variables in `src/styles/index.css`.
 
 ## After cloning
 
